@@ -5,17 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <h1>WAKTU</h1>
     <div class="timezone-display">
-      <div id="main-timezone">
-        <div id="main-timezone_location">LOCATION</div>
-        <div id="main-timezone_time">TIME</div>
-        <div id="main-timezone_date">DATE</div>
+      <div class="main-timezone">
+        <div class="main-timezone__location">LOCATION</div>
+        <div class="main-timezone__time">TIME</div>
+        <div class="main-timezone__date">DATE</div>
       </div>
-      <button id="add-button" type="button">Click this button</button>
+      <div class="search-bar">
+        <input
+          type="text"
+          class="search-bar__input"
+          placeholder="enter your country"
+          aria-label="search"
+        />
+        <button class="search-bar__submit"><i class="fa fa-plus"></i></button>
+      </div>
     </div>
-    <script src="../js/main.js"></script>
+    <script src="../js/main.js" aria-label="submit search"></script>
   </body>
 </html>

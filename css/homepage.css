@@ -1,5 +1,5 @@
 body {
- display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -11,16 +11,16 @@ h1 {
   padding: 0;
   justify-content: center;
 }
-.timezone-display{
+.timezone-display {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   padding: 146px 300px;
   border: 1px dashed red;
-  margin-top:138px;
+  margin-top: 138px;
 }
-#main-timezone {
+.main-timezone {
   display: flex;
   border: 1px dashed red;
   position: absolute;
@@ -29,26 +29,83 @@ h1 {
   justify-content: center;
 }
 
-#main-timezone_location {
+.main-timezone__location {
   border: 1px dashed red;
   font-size: 16px;
   position: absolute;
   top: 0;
   left: 0;
 }
-#main-timezone_time {
+.main-timezone__time {
   border: 1px dashed red;
   font-size: 70px;
   position: absolute;
 }
-#main-timezone_date {
+.main-timezone__date {
   border: 1px dashed red;
   font-size: 16px;
   position: absolute;
   bottom: 0;
   right: 0;
 }
-#add-button{
+.search-bar {
+  --size: 40px;
   position: absolute;
   bottom: 0;
+  border: 1px dashed red;
+  display: flex;
+  padding: 3px;
+  height: calc(var(--size) - 10px);
+  width: calc(var(--size) - 10px);
+  border-radius: 50px;
+  transition: width 300ms ease-in-out;
+  overflow: hidden;
+}
+.search-bar__input {
+  flex-grow: 1;
+  font-size: 16px;
+  border: 0;
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+  outline: 0;
+}
+
+.search-bar__submit {
+  font-size: 16px;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  border-radius: 50%;
+  width: calc(var(--size) - 10px);
+  height: calc(var(--size) - 10px);
+  margin-left: auto;
+  transition: background 150ms ease-in-out;
+}
+
+.search-bar:focus-within {
+  outline: 0;
+  width: 200px;
+  .search-bar__input {
+    opacity: 1;
+    width: 150px;
+    cursor: initial;
+    :focus {
+      outline: 0;
+    }
+  }
+  .search-bar__submit {
+    background: red;
+    color: white;
+    :hover,
+    :focus {
+      outline: 0;
+      border: 0;
+      text-shadow: 0 0 10px gray;
+    }
+  }
 }
