@@ -12,7 +12,7 @@ h1 {
   padding: 0;
   justify-content: center;
 }
-.timezone-display {
+.timezone-display--main {
   display: flex;
   position: relative;
   justify-content: center;
@@ -81,7 +81,7 @@ h1 {
 }
 
 .search-bar__submit {
-  font-size: 16px;
+  font-size: 4em;
   cursor: pointer;
   border: 0;
   background: transparent;
@@ -90,6 +90,9 @@ h1 {
   height: calc(var(--size) - 10px);
   margin-left: auto;
   transition: background 150ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-bar:focus-within {
@@ -113,4 +116,37 @@ h1 {
       text-shadow: 0 0 10px gray;
     }
   }
+}
+
+.timezone-display--others {
+  display: flex;
+  position: relative;
+  border: 1px dashed red;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  max-width: 22em;
+  width: 100%;
+  min-height: 9em;
+}
+.others-timezone>div{
+  border:1px dashed red;
+}
+
+.others-timezone__location {
+  position:absolute;
+  left:0;
+  top:0;
+  font-size:1.5em;
+}
+
+.others-timezone__date{
+  position:absolute;
+  right:0;
+  bottom:0;
+  font-size:1.5em;
+}
+
+.others-timezone__time{
+  font-size:3.5em;
 }

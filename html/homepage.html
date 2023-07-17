@@ -12,7 +12,7 @@
   </head>
   <body>
     <h1>WAKTU</h1>
-    <div class="timezone-display">
+    <div class="timezone-display--main">
       <div class="main-timezone">
         <div class="main-timezone__location">LOCATION</div>
         <div class="main-timezone__time">TIME</div>
@@ -25,7 +25,34 @@
           placeholder="enter your country"
           aria-label="search"
         />
-        <button class="search-bar__submit"><i class="fa fa-plus"></i></button>
+        <button class="search-bar__submit">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="2"
+            viewBox="0 0 16 16"
+            height="1em"
+            width="1em"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 3.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H4a.5.5 0 010-1h3.5V4a.5.5 0 01.5-.5z"
+              clip-rule="evenodd"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M7.5 8a.5.5 0 01.5-.5h4a.5.5 0 010 1H8.5V12a.5.5 0 01-1 0V8z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="timezone-display--others">
+      <div class="others-timezone">
+        <div class="others-timezone__location">LOCATION</div>
+        <div class="others-timezone__time">TIME</div>
+        <div class="others-timezone__date">DATE</div>
       </div>
     </div>
     <script src="../js/main.js" aria-label="submit search"></script>
