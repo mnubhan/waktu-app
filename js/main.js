@@ -22,4 +22,17 @@ let time = {
       .split("/")[1]
       .replace("_", " ");
   },
+  search: function () {
+    this.fetchTime(document.querySelector(".search-bar__input").value);
+    // console.log(document.querySelector(".search-bar__input").value);
+  },
 };
+document
+  .querySelector(".search-bar__button")
+  .addEventListener("click", () => time.search());
+
+document
+  .querySelector(".search-bar__input")
+  .addEventListener("keyup", (event) => {
+    event.key == "Enter" ? time.search() : null;
+  });
