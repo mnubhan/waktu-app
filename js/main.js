@@ -14,13 +14,22 @@ let time = {
     const { datetime } = data;
     const { timezone } = data;
     const { date } = data;
-    document.querySelector(".others-timezone__time").innerText = datetime
-      .split(" ")[1]
-      .replace("_", " ");
-    document.querySelector(".others-timezone__date").innerText = date;
-    document.querySelector(".others-timezone__location").innerText = timezone
-      .split("/")[1]
-      .replace("_", " ");
+    timezoneDisplayOthers = document.querySelector(".timezone-display--others");
+    newOtherTimezone=document.createElement("div")
+    newOtherTimezone.className="others-timezone"
+    newOtherTimezoneLocation=document.createElement("div")
+    newOtherTimezoneLocation.className="others-timezone__location"
+    newOtherTimezoneLocation.innerText=timezone.split("/")[1].replace("_", " ")
+    newOtherTimezoneTime=document.createElement("div")
+    newOtherTimezoneTime.className="others-timezone__time"
+    newOtherTimezoneTime.innerText=datetime.split(" ")[1].replace("_", " ")
+    newOtherTimezoneDate=document.createElement("div")
+    newOtherTimezoneDate.className="others-timezone__date"
+    newOtherTimezoneDate.innerText=date
+    newOtherTimezone.appendChild(newOtherTimezoneLocation)
+    newOtherTimezone.appendChild(newOtherTimezoneTime)
+    newOtherTimezone.appendChild(newOtherTimezoneDate)
+    timezoneDisplayOthers.appendChild(newOtherTimezone)
   },
   search: function () {
     this.fetchTime(document.querySelector(".search-bar__input").value);
