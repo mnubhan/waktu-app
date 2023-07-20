@@ -33,7 +33,7 @@ let time = {
   },
   search: function () {
     this.fetchTime(document.querySelector(".search-bar__input").value);
-    // console.log(document.querySelector(".search-bar__input").value);
+    document.querySelector(".search-bar__input").value = "";
   },
 };
 document

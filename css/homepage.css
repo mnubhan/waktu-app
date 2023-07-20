@@ -125,28 +125,38 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-top: 2em;
+  width: 100%;
+}
+
+.others-timezone {
+  display: flex;
+  border: 1px dashed red;
+  align-items: center;
+  justify-content: center;
+  margin: 2em;
   max-width: 22em;
   width: 100%;
+  position: relative;
   min-height: 9em;
 }
-.others-timezone>div{
-  border:1px dashed red;
+.others-timezone > div {
+  border: 1px dashed red;
 }
 
 .others-timezone__location {
-  position:absolute;
-  left:0;
-  top:0;
-  font-size:1.5em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5em;
 }
 
-.others-timezone__date{
-  position:absolute;
-  right:0;
-  bottom:0;
-  font-size:1.5em;
+.others-timezone__date {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1.5em;
 }
 
-.others-timezone__time{
-  font-size:3.5em;
+.others-timezone__time {
+  font-size: 3.5em;
 }
