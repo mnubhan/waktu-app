@@ -43,8 +43,9 @@ h1 {
 }
 .main-timezone__time {
   border: 1px dashed red;
-  font-size: 70px;
+  font-size: 5em;
   position: absolute;
+  display: flex;
 }
 .main-timezone__date {
   border: 1px dashed red;
@@ -120,6 +121,7 @@ h1 {
 
 .timezone-display--others {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   border: 1px dashed red;
   align-items: center;
@@ -158,5 +160,13 @@ h1 {
 }
 
 .others-timezone__time {
+  display: flex;
   font-size: 3.5em;
+}
+
+.cross-icon{
+  position:absolute;
+  top:0;
+  right:0;
+  border:1px dashed red;
 }
