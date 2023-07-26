@@ -36,4 +36,14 @@ export const displayMainTimezone = (data) => {
   mainTimezone.appendChild(locationDiv);
   mainTimezone.appendChild(timeDiv);
   mainTimezone.appendChild(dateDiv);
+  setInterval(() => {
+    fetch(`http://worldtimeapi.org/api/timezone/${timezone}`)
+      .then((response) => response.json())
+      .then((data) => data.datetime.split("T")[1].slice(0, 8).split(":"))
+      .then((time) => {
+        hourSpan.innerText = time[0];
+        minuteSpan.innerText = time[1];
+        secondSpan.innerText = time[2];
+      });
+  }, 1000);
 };
