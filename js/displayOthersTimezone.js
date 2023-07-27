@@ -65,6 +65,9 @@ export function displayOthersTimezone(data) {
   const crossIcon = document.createElement("div");
   crossIcon.className = "cross-icon";
   crossIcon.appendChild(crossSvg);
+  crossIcon.addEventListener("click", (e) =>
+    e.target.parentElement.parentElement.remove()
+  );
   newOtherTimezone.appendChild(newOtherTimezoneLocation);
   newOtherTimezone.appendChild(newOtherTimezoneTime);
   newOtherTimezone.appendChild(newOtherTimezoneDate);

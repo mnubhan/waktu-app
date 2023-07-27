@@ -25,6 +25,7 @@ const mainTimeEvent = () => {
     .then((response) => response.json())
     .then((data) => fetchTimeByIp(data.ip));
 };
+
 window.onload = () => {
   otherTimeEvent();
   mainTimeEvent();
