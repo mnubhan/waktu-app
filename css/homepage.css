@@ -3,6 +3,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 1em;
+  background-color: #3aafa9;
+  font-family: "Roboto", sans-serif;
 }
 h1 {
   display: flex;
@@ -12,6 +14,11 @@ h1 {
   padding: 0;
   justify-content: center;
 }
+h1,
+.timezone-display--main,
+.timezone-display--others {
+  color: #feffff;
+}
 .timezone-display--main {
   display: flex;
   position: relative;
@@ -20,12 +27,12 @@ h1 {
   max-width: 35rem;
   width: 100%;
   min-height: 18rem;
-  border: 1px dashed red;
-  margin-top: 138px;
+  /* border: 1px dashed red; */
+  margin-top: 9em;
 }
 .main-timezone {
   display: flex;
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
   position: absolute;
   max-width: 30rem;
   width: 100%;
@@ -35,20 +42,20 @@ h1 {
 }
 
 .main-timezone__location {
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
   font-size: 2em;
   position: absolute;
   top: 0;
   left: 0;
 }
 .main-timezone__time {
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
   font-size: 5em;
   position: absolute;
   display: flex;
 }
 .main-timezone__date {
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
   font-size: 2em;
   position: absolute;
   bottom: 0;
@@ -58,7 +65,7 @@ h1 {
   --size: 40px;
   position: absolute;
   bottom: 0;
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
   display: flex;
   padding: 3px;
   height: calc(var(--size) - 10px);
@@ -85,7 +92,7 @@ h1 {
   font-size: 4em;
   cursor: pointer;
   border: 0;
-  background: transparent;
+  background:#2B7A78;
   border-radius: 50%;
   width: calc(var(--size) - 10px);
   height: calc(var(--size) - 10px);
@@ -96,20 +103,27 @@ h1 {
   align-items: center;
 }
 
+
 .search-bar:focus-within {
   outline: 0;
   width: 200px;
+  border: 1px solid #2B7A78;
+  ::placeholder{
+    color: #feffff;
+  }
   .search-bar__input {
-    opacity: 1;
+    color: #feffff;
+    opacity: 2;
     width: 150px;
     cursor: initial;
+    background-color:#3AAFA9;
     :focus {
       outline: 0;
     }
   }
   .search-bar__button {
-    background: red;
-    color: white;
+    background-color: #2B7A78;
+    color: #feffff;
     :hover,
     :focus {
       outline: 0;
@@ -118,12 +132,11 @@ h1 {
     }
   }
 }
-
 .timezone-display--others {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
   align-items: center;
   justify-content: center;
   margin-top: 2em;
@@ -132,7 +145,7 @@ h1 {
 
 .others-timezone {
   display: flex;
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
   align-items: center;
   justify-content: center;
   margin: 2em;
@@ -140,12 +153,16 @@ h1 {
   width: 100%;
   position: relative;
   min-height: 9em;
+  border-radius: 5px;
+  background: #2b7a78;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .others-timezone > div {
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
 }
 
 .others-timezone__location {
+  padding-left: 0.2em;
   position: absolute;
   left: 0;
   top: 0;
@@ -164,9 +181,9 @@ h1 {
   font-size: 3.5em;
 }
 
-.cross-icon{
-  position:absolute;
-  top:0;
-  right:0;
-  border:1px dashed red;
+.cross-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
 }
