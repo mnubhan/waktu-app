@@ -44,7 +44,7 @@ export function displayOthersTimezone(data) {
   );
   setAttributeList(crossPath, {
     fill: "none",
-    stroke: "#FEFFFF",
+    stroke: "#6A6965",
     "stroke-width": "2",
     d: "M7,7 L17,17 M7,17 L17,7",
   });

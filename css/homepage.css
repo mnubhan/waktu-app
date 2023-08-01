@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 1em;
-  background-color: #3aafa9;
+  background-color: #EAE7DC;
   font-family: "Roboto", sans-serif;
 }
 h1 {
@@ -17,7 +17,7 @@ h1 {
 h1,
 .timezone-display--main,
 .timezone-display--others {
-  color: #feffff;
+  color: #6A6965;
 }
 .timezone-display--main {
   display: flex;
@@ -27,12 +27,10 @@ h1,
   max-width: 35rem;
   width: 100%;
   min-height: 18rem;
-  /* border: 1px dashed red; */
-  margin-top: 9em;
+  margin-top: 7em;
 }
 .main-timezone {
   display: flex;
-  /* border: 1px dashed red; */
   position: absolute;
   max-width: 30rem;
   width: 100%;
@@ -42,20 +40,17 @@ h1,
 }
 
 .main-timezone__location {
-  /* border: 1px dashed red; */
   font-size: 2em;
   position: absolute;
   top: 0;
   left: 0;
 }
 .main-timezone__time {
-  /* border: 1px dashed red; */
   font-size: 5em;
   position: absolute;
   display: flex;
 }
 .main-timezone__date {
-  /* border: 1px dashed red; */
   font-size: 2em;
   position: absolute;
   bottom: 0;
@@ -65,7 +60,6 @@ h1,
   --size: 40px;
   position: absolute;
   bottom: 0;
-  /* border: 1px dashed red; */
   display: flex;
   padding: 3px;
   height: calc(var(--size) - 10px);
@@ -92,7 +86,7 @@ h1,
   font-size: 4em;
   cursor: pointer;
   border: 0;
-  background:#2B7A78;
+  background:#6A6965;
   border-radius: 50%;
   width: calc(var(--size) - 10px);
   height: calc(var(--size) - 10px);
@@ -107,23 +101,23 @@ h1,
 .search-bar:focus-within {
   outline: 0;
   width: 200px;
-  border: 1px solid #2B7A78;
+  border: 1px solid #6A6965;
   ::placeholder{
-    color: #feffff;
+    color: #6A6965;
   }
   .search-bar__input {
-    color: #feffff;
+    color: #6A6965;
     opacity: 2;
     width: 150px;
     cursor: initial;
-    background-color:#3AAFA9;
+    background-color:#EAE7DC;
     :focus {
       outline: 0;
     }
   }
   .search-bar__button {
-    background-color: #2B7A78;
-    color: #feffff;
+    background-color: #6A6965;
+    color: #EAE7DC;
     :hover,
     :focus {
       outline: 0;
@@ -136,7 +130,6 @@ h1,
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  /* border: 1px dashed red; */
   align-items: center;
   justify-content: center;
   margin-top: 2em;
@@ -145,7 +138,6 @@ h1,
 
 .others-timezone {
   display: flex;
-  /* border: 1px dashed red; */
   align-items: center;
   justify-content: center;
   margin: 2em;
@@ -154,12 +146,10 @@ h1,
   position: relative;
   min-height: 9em;
   border-radius: 5px;
-  background: #2b7a78;
+  background: #F3EFEF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.others-timezone > div {
-  /* border: 1px dashed red; */
-}
+
 
 .others-timezone__location {
   padding-left: 0.2em;
