@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 1em;
-  background-color: #EAE7DC;
+  background-color: #eae7dc;
   font-family: "Roboto", sans-serif;
 }
 h1 {
@@ -17,14 +17,13 @@ h1 {
 h1,
 .timezone-display--main,
 .timezone-display--others {
-  color: #6A6965;
+  color: #6a6965;
 }
 .timezone-display--main {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-  max-width: 35rem;
   width: 100%;
   min-height: 18rem;
   margin-top: 7em;
@@ -34,6 +33,7 @@ h1,
   position: absolute;
   max-width: 30rem;
   width: 100%;
+  height: auto;
   min-height: 12rem;
   align-items: center;
   justify-content: center;
@@ -86,7 +86,7 @@ h1,
   font-size: 4em;
   cursor: pointer;
   border: 0;
-  background:#6A6965;
+  background: #6a6965;
   border-radius: 50%;
   width: calc(var(--size) - 10px);
   height: calc(var(--size) - 10px);
@@ -97,27 +97,26 @@ h1,
   align-items: center;
 }
 
-
 .search-bar:focus-within {
   outline: 0;
   width: 200px;
-  border: 1px solid #6A6965;
-  ::placeholder{
-    color: #6A6965;
+  border: 1px solid #6a6965;
+  ::placeholder {
+    color: #6a6965;
   }
   .search-bar__input {
-    color: #6A6965;
+    color: #6a6965;
     opacity: 2;
     width: 150px;
     cursor: initial;
-    background-color:#EAE7DC;
+    background-color: #eae7dc;
     :focus {
       outline: 0;
     }
   }
   .search-bar__button {
-    background-color: #6A6965;
-    color: #EAE7DC;
+    background-color: #6a6965;
+    color: #eae7dc;
     :hover,
     :focus {
       outline: 0;
@@ -146,10 +145,15 @@ h1,
   position: relative;
   min-height: 9em;
   border-radius: 5px;
-  background: #F3EFEF;
+  background: #f3efef;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
 }
 
+.others-timezone:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
 
 .others-timezone__location {
   padding-left: 0.2em;
