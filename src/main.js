@@ -4,8 +4,8 @@ import { fetchTimeByIp } from "./fetchTimeByIp.js";
 const otherTimeEvent = () => {
   let time = {
     search: function () {
-      let value=document.querySelector(".search-bar__input").value
-      value!=""?fetchTime(value):null;
+      let value = document.querySelector(".search-bar__input").value;
+      value != "" ? fetchTime(value) : null;
       document.querySelector(".search-bar__input").value = "";
     },
   };
@@ -17,6 +17,11 @@ const otherTimeEvent = () => {
     .querySelector(".search-bar__input")
     .addEventListener("keyup", (event) => {
       event.key == "Enter" ? time.search() : null;
+    });
+  document
+    .querySelector(".search-bar__input")
+    .addEventListener("touchend", () => {
+      time.search();
     });
 };
 
