@@ -67,6 +67,7 @@ h1,
   border-radius: 50px;
   transition: width 300ms ease-in-out;
   overflow: hidden;
+  border:1px solid #6a6965;
 }
 .search-bar__input {
   flex-grow: 1;
