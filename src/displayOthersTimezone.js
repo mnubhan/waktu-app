@@ -74,7 +74,7 @@ export function displayOthersTimezone(data) {
   newOtherTimezone.appendChild(crossIcon);
   timezoneDisplayOthers.appendChild(newOtherTimezone);
   setInterval(() => {
-    fetch(`http://worldtimeapi.org/api/timezone/${timezone}`)
+    fetch(`https://worldtimeapi.org/api/timezone/${timezone}`)
       .then((response) => response.json())
       .then((data) => data.datetime.split("T")[1].slice(0, 8).split(":"))
       .then((time) => {
