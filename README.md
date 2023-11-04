@@ -15,6 +15,10 @@ Waktu App is a minimalistic, user-friendly web application that allows users to 
 - Vanilla CSS
 - Vanilla JavaScript
 
+## Preview
+
+Preview App: [https://waktu-app.vercel.app/]
+
 ## Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make to Waktu App are **greatly appreciated**.
@@ -32,6 +36,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Project Link: [https://github.com/mnubhan/waktu-app]
-Preview App: [https://waktu-app.vercel.app/]
+
+
 
 We hope Waktu App helps you keep track of time effortlessly and would love to hear any feedback or suggestions you might have!
