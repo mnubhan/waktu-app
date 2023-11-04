@@ -9,25 +9,11 @@ Waktu App is a minimalistic, user-friendly web application that allows users to 
 - **Responsive Design:** Fully responsive layout that looks great on desktop, tablet, and mobile.
 - **No Dependencies:** Built with vanilla HTML, CSS, and JS, with no need for external libraries or frameworks.
 
-## Preview
-
-Add a screenshot of your app here.
-
 ## Tech Stack
 
 - HTML
 - Vanilla CSS
 - Vanilla JavaScript
-
-## Installation
-
-No installation is necessary! Just clone the repository and open the `index.html` file in your browser.
-
-```bash
-git clone https://github.com/mnubhan/waktu-app.git
-cd waktu-app
-open index.html
-```
 
 ## Contributing
 
@@ -45,6 +31,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Project Link: [https://github.com/mnubhan/waktu-app](https://github.com/mnubhan/waktu-app)
+Project Link: [https://github.com/mnubhan/waktu-app]
+Preview App: [https://waktu-app.vercel.app/]
 
 We hope Waktu App helps you keep track of time effortlessly and would love to hear any feedback or suggestions you might have!
