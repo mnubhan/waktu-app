@@ -2,7 +2,7 @@ export const displayMainTimezone = (data) => {
   const { datetime, timezone } = data;
   const time = datetime.split("T")[1].slice(0, 8).split(":");
   const date = datetime.split("T")[0];
-  const location = timezone.split("/")[1];
+  const location = timezone.split("/")[1].replace("_", " ";
   /* Create location div */
   const locationDiv = document.createElement("div");
   locationDiv.setAttribute("class", "main-timezone__location");
